@@ -1,1 +1,86 @@
 @import "tailwindcss";
+@import 'react-data-grid/lib/styles.css';
+
+@import 'flexlayout-react/style/light.css';
+
+.rdg {
+  @apply border border-gray-200 rounded-lg shadow-sm font-sans;
+}
+
+.rdg-header-row {
+  @apply bg-gradient-to-r from-gray-50 to-gray-100 font-semibold text-gray-700 text-sm border-b border-gray-300;
+}
+
+.rdg-cell {
+  @apply border-r border-b border-gray-200 text-sm p-3;
+}
+
+.rdg-row {
+  @apply hover:bg-blue-50 transition-colors duration-150;
+}
+
+.rdg-row-even {
+  @apply bg-gray-50;
+}
+
+.rdg-row-selected {
+  @apply bg-blue-100;
+}
+
+/* FlexLayout Enhanced Styling */
+.flexlayout__layout {
+  @apply border-0 bg-gray-50;
+}
+
+.flexlayout__tabset {
+  @apply bg-white rounded-lg shadow-sm;
+}
+
+.flexlayout__tab {
+  @apply bg-white border-b-2 border-transparent;
+}
+
+.flexlayout__tab--selected {
+  @apply border-blue-500 bg-blue-50;
+}
+
+.flexlayout__tab_button {
+  @apply px-4 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors;
+}
+
+.flexlayout__tab_button--selected {
+  @apply text-blue-600 bg-blue-50;
+}
+
+.flexlayout__tab_button_content {
+  @apply flex items-center;
+}
+
+.flexlayout__splitter {
+  @apply bg-gray-200 hover:bg-blue-300 transition-colors;
+}
+
+.flexlayout__splitter_drag {
+  @apply bg-blue-400;
+}
+
+.flexlayout__border {
+  @apply bg-white rounded-lg shadow-sm;
+}
+
+/* Scrollbar styling */
+.rdg ::-webkit-scrollbar {
+  @apply w-2 h-2;
+}
+
+.rdg ::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+.rdg ::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 rounded-full;
+}
+
+.rdg ::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-600;
+}
