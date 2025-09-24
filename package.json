@@ -1,0 +1,8 @@
+{
+  "name": "turborepo-remix-shadcn-starter",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "devDependencies": {
+    "turbo": "^1.6.0"
+  }
+}
